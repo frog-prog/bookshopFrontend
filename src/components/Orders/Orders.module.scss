@@ -1,0 +1,126 @@
+.bc {
+  width: 100%;
+  margin-top: 30px;
+  max-width: 1024px;
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 10px;
+  font-size: 20px;
+  .input_notActive {
+    width: calc(100% - 20px);
+    display: flex;
+    height: 25px;
+    font-size: 20px;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    padding: 5px;
+    margin: 5px 5px 0;
+  }
+  .resultContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    .resultItem{
+      width: 45%;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+  }
+  .navigation{
+    margin-top: 50px;
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    column-gap: 10px;
+    .pagButton_active{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      font-weight: 600;
+      height: 25px;
+      font-size: 15px;
+      border-radius: 5px;
+      color: white;
+      background-color: crimson;
+      cursor:pointer;
+    }
+    .pagButton_notActive{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 80px;
+      font-weight: 600;
+      height: 25px;
+      font-size: 15px;
+      border-radius: 5px;
+      color: white;
+      background-color: #9d9d9d;
+      cursor:none;
+    }
+  }
+  .mistake{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    color: #fa0202;
+    margin-top: 30px;
+  }
+  .sendButton{
+    background-color: darkgreen;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    border:none;
+    font-size: 20px;
+    border-radius: 7px;
+    height: 30px;
+    margin: 10px;
+    color: white;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+@media (max-width: 600px) {
+  .bc {
+
+
+    .input_notActive {
+
+    }
+
+    .resultContainer {
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      .resultItem {
+        width: 100%;
+      }
+    }
+
+    .mistake {
+
+    }
+    .navigation{
+
+      .pagButton_active{
+
+      }
+      .pagButton_notActive{
+
+      }
+    }
+    .sendButton {
+
+    }
+  }
+}

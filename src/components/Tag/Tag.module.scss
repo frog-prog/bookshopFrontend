@@ -1,0 +1,50 @@
+.tag{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  vertical-align: center;
+  font-size: 15px;
+  padding: 5px;
+  border-radius: 5px;
+  color: #fff;
+  margin: 5px;
+  column-gap: 10px;
+  background-color: chocolate;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;
+  .tagCross{
+    display: flex;
+    text-align: center;
+    vertical-align: center;
+    justify-content: center;
+    color: #fa0202;
+    background-color: gray;
+    position: relative;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    .stick1{
+      width: 100%;
+      position: absolute;
+      height: 2px;
+      background-color: #fa0202;
+      bottom:calc(50% - 1px);
+      left: 0;
+      transform: rotate(45deg)
+    }
+    .stick2{
+      width: 100%;
+      position: absolute;
+      height: 2px;
+      background-color: #fa0202;
+      bottom:calc(50% - 1px);
+      left: 0;
+      transform: rotate(-45deg)
+    }
+  }
+}

@@ -1,0 +1,140 @@
+
+  .sf {
+    width: 90%;
+    margin-top: 30px;
+    max-width: 400px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-size: 20px;
+    position: relative;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    .delScreen{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-color: #646363;
+      opacity: 0.5;
+      border-radius: 7px;
+    }
+    .tagContainer{
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      column-gap: 5px;
+      row-gap: 5px;
+    }
+    .input_active {
+      width: calc(100% - 10px);
+      display: flex;
+      height: 16px;
+      align-items: center;
+      background-color: #f1f1f1;
+      border-radius: 8px;
+      border-color: #fa0202;
+      border-style: solid;
+      padding: 5px;
+    }
+
+    .input_notActive {
+      width: calc(100% - 20px);
+      display: flex;
+      height: 25px;
+      font-size: 20px;
+      align-items: center;
+      background-color: #f1f1f1;
+      border-radius: 8px;
+      padding: 5px;
+      margin: 5px 5px 0;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 5px 15px -4px inset, rgba(0, 0, 0, 0.3) 0px 6px 12px -6px inset;
+    }
+    .mistake{
+      color: #fa0202;
+      margin: 10px 10px 0;
+    }
+    .success{
+      color:#5CBF2E;
+      margin: 10px 10px 0;
+    }
+    .plusButton{
+      background-color: brown;
+      color: white;
+      width: 25px;
+      display: flex;
+      justify-content: center;
+      border: none;
+      height: 25px;
+      font-size: 22px;
+      font-weight: 600;
+      cursor: pointer;
+      border-radius: 5px;
+      margin: 7px;
+    }
+    .addOrderContainer{
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: column;
+      width: 100%;
+      align-items: flex-start;
+      row-gap: 5px;
+      border-bottom-style: solid;
+      border-top-style: solid;
+      border-bottom-color: gray;
+      border-top-color:gray;
+      border-radius: 6px;
+      .sendButton{
+        background-color: darkgreen;
+        width: 250px;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        border:none;
+        font-size: 20px;
+        border-radius: 7px;
+        height: 30px;
+        margin: 10px;
+        color: white;
+        align-items: center;
+        cursor: pointer;
+      }
+    }
+    .buttonContainer{
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      column-gap: 10px;
+      .sendButton{
+        background-color: darkgreen;
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        border:none;
+        font-size: 20px;
+        border-radius: 7px;
+        height: 30px;
+        margin: 10px;
+        color: white;
+        align-items: center;
+        cursor: pointer;
+      }
+      .delButton{
+        width: 100px;
+        display: flex;
+        justify-content: center;
+        border:none;
+        font-size: 20px;
+        border-radius: 7px;
+        height: 30px;
+        margin: 10px;
+        color: white;
+        align-items: center;
+        cursor: pointer;
+      }
+    }
+  }
